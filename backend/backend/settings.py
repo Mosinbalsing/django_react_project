@@ -9,8 +9,10 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
+import pymysql
+pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,13 +79,23 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  # Use MySQL as the database engine
+#         'NAME': 'ecommercewebstore',          # Name of your MySQL database
+#         'USER': 'root',          # Your MySQL username
+#         'PASSWORD': 'root',  # Your MySQL password
+#         'HOST': 'localhost',                   # Or use the server IP if remote
+#         'PORT': '3306',                        # Default MySQL port
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -131,3 +143,12 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_ALL_ORIGINS = True  # Use only for development!
 
+# settings.py
+
+STATIC_URL = '/static/'
+MEDIA_URL = '/images/'   
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]   
+
+MEDIA_ROOT = 'static/images'

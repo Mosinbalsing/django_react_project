@@ -18,9 +18,11 @@ const ProductList = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
-
+  console.log(products);
+  
+const cat = 'product'
   const handleProductClick = (id) => {
-    navigate(`/product/${id}`);
+    navigate(`/${cat}/${id}`);
   };
 
   return (
@@ -32,7 +34,7 @@ const ProductList = () => {
           className="cursor-pointer border rounded p-4 shadow hover:shadow-lg transition"
         >
           <img
-            src={product.image}
+            src={`http://127.0.0.1:8000/static`+product.image}
             alt={product.name}
             className="w-full h-48 object-cover mb-2"
           />

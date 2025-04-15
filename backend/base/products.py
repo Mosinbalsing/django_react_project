@@ -2,7 +2,7 @@ products = [
     {
         '_id': '1',
         'name': 'Airpods Wireless Bluetooth Headphones',
-        'image': '/images/airpods.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/airpod.jpg',
         'description':
         'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
         'brand': 'Apple',
@@ -15,7 +15,7 @@ products = [
     {
         '_id': '2',
         'name': 'iPhone 11 Pro 256GB Memory',
-        'image': '/images/phone.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/phone.jpg',
         'description':
         'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
         'brand': 'Apple',
@@ -28,7 +28,7 @@ products = [
     {
         '_id': '3',
         'name': 'Cannon EOS 80D DSLR Camera',
-        'image': '/images/camera.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/camera.jpg',
         'description':
         'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
         'brand': 'Cannon',
@@ -41,7 +41,7 @@ products = [
     {
         '_id': '4',
         'name': 'Sony Playstation 4 Pro White Version',
-        'image': '/images/playstation.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/ps4.jpg',
         'description':
         'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
         'brand': 'Sony',
@@ -54,7 +54,7 @@ products = [
     {
         '_id': '5',
         'name': 'Logitech G-Series Gaming Mouse',
-        'image': '/images/mouse.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/mouse.jpg',
         'description':
         'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
         'brand': 'Logitech',
@@ -67,7 +67,7 @@ products = [
     {
         '_id': '6',
         'name': 'Amazon Echo Dot 3rd Generation',
-        'image': '/images/alexa.jpg',
+        'image': 'http://127.0.0.1:8000/static/images/gag.jpg',
         'description':
         'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
         'brand': 'Amazon',
@@ -77,4 +77,63 @@ products = [
         'rating': 4,
         'numReviews': 12,
     },
+]
+necklaces = [
+    {
+        '_id':'1' ,
+        'name': 'Red and green kemp stone necklace',
+        'price': 900.0,
+        'original Price': 1100.0,
+        'image': 'http://127.0.0.1:8000/static/images/necklace/necklace-2.jpg',
+        'rating': 4.5,
+        'reviews': 128,
+        'description': 'Exquisite handcrafted necklace featuring a delicate floral design. The Blossom bouquet flower necklace is adorned with premium gemstones and crafted with 22K gold plating for a luxurious finish.',
+        'specifications': [
+            {'name': 'Material', 'value': '22K Gold Plated'},
+            {'name': 'Gemstones', 'value': 'Ruby, Emerald'},
+            {'name': 'Weight', 'value': '12.5 grams'},
+            {'name': 'Chain Length', 'value': '18 inches'},
+            {'name': 'Closure Type', 'value': 'Lobster Clasp'},
+            {'name': 'Occasion', 'value': 'Wedding, Party, Daily Wear'},
+        ],
+        'category': 'necklace'
+    },
+    {
+        '_id': '2',
+        'name': 'Pearl drop choker necklace',
+        'price': 1200.0,
+        'original Price': 1500.0,
+        'image': 'http://127.0.0.1:8000/static/images/necklace/necklace-3.jpg',
+        'rating': 4.8,
+        'reviews': 200,
+        'description': 'Elegant choker with pearl drops and intricate kundan work, ideal for festive occasions and weddings.',
+        'specifications': [
+            {'name': 'Material', 'value': 'Gold Plated Brass'},
+            {'name': 'Gemstones', 'value': 'Pearls, Kundan'},
+            {'name': 'Weight', 'value': '10 grams'},
+            {'name': 'Chain Length', 'value': '16 inches'},
+            {'name': 'Closure Type', 'value': 'Hook'},
+            {'name': 'Occasion', 'value': 'Wedding, Festival'},
+        ],
+        'category': 'necklace'
+    },
+    {
+        '_id': '3', 
+        'name': 'Minimal gold plated pendant necklace',
+        'price': 700.0,
+        'original Price': 850.0,
+        'image': 'http://127.0.0.1:8000/static/images/necklace/necklace-4.jpg',
+        'rating': 4.3,
+        'reviews': 90,
+        'description': 'Simple yet stylish gold-plated necklace with a single pendant, perfect for daily wear.',
+        'specifications': [
+            {'name': 'Material', 'value': 'Gold Plated Alloy'},
+            {'name': 'Gemstones', 'value': 'None'},
+            {'name': 'Weight', 'value': '8 grams'},
+            {'name': 'Chain Length', 'value': '20 inches'},
+            {'name': 'Closure Type', 'value': 'Lobster Clasp'},
+            {'name': 'Occasion', 'value': 'Casual, Office'},
+        ],
+        'category': 'necklace'
+    }
 ]
